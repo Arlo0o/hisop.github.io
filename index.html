@@ -167,7 +167,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Camera-based 3D Semantic Occupancy Prediction (SOP) is crucial for understanding complex 3D scenes from limited 2D image observations. Existing SOP methods typically aggregate contextual features to assist the occupancy representation learning, alleviating issues like occlusion or ambiguity. However, these solutions often face misalignment issues wherein the corresponding features at the same position across different frames may have different semantic meanings during the aggregation process, which leads to unreliable contextual fusion results and an unstable representation learning process. To address this problem, we introduce a new Hierarchical context alignment paradigm for a more accurate SOP (<b>Hi-SOP</b>). Hi-SOP first disentangles the geometric and temporal context for separate alignment, which two branches are then composed to enhance the reliability of semantic occupancy prediction. This parsing of the visual input into a local-global alignment hierarchy includes: (I) disentangled geometric and temporal separate alignment, within each leverages depth confidence and camera pose as prior for relevant feature matching respectively; (II) global alignment and composition of the transformed geometric and temporal volumes based on semantics consistency. Our method outperforms SOTAs for semantic scene completion on the SemanticKITTI\&NuScene-Occupancy datasets and LiDAR semantic segmentation on the NuScene dataset.
+            Camera-based 3D Semantic Occupancy Prediction (SOP) is crucial for understanding complex 3D scenes from limited 2D image observations. Existing SOP methods typically aggregate contextual features to assist the occupancy representation learning, alleviating issues like occlusion or ambiguity. However, these solutions often face misalignment issues wherein the corresponding features at the same position across different frames may have different semantic meanings during the aggregation process, which leads to unreliable contextual fusion results and an unstable representation learning process. To address this problem, we introduce a new Hierarchical context alignment paradigm for a more accurate SOP (<b>Hi-SOP</b>). Hi-SOP first disentangles the geometric and temporal context for separate alignment, which two branches are then composed to enhance the reliability of semantic occupancy prediction. This parsing of the visual input into a local-global alignment hierarchy includes: (I) disentangled geometric and temporal separate alignment, within each leverages depth confidence and camera pose as prior for relevant feature matching respectively; (II) global alignment and composition of the transformed geometric and temporal volumes based on semantics consistency. Our method outperforms SOTAs for semantic scene completion on the SemanticKITTI&NuScene-Occupancy datasets and LiDAR semantic segmentation on the NuScene dataset.
           </p>
         </div>
       </div>
@@ -300,13 +300,13 @@
 
     <center><img src="hisop\ab1.jpg" alt="Teaser" width="70%"></center>
     <div class="content has-text-justified">
-      Ablation study for different architectural components on the SemanticKITTI validation set.
+      <center>Ablation study for different architectural components on the SemanticKITTI validation set.</center>
     </div>
 
 
     <center><img src="hisop\ab2.jpg" alt="Teaser" width="70%"></center>
     <div class="content has-text-justified">
-      Ablation studies of quantity setting for the Multi-group Context Generation and Multi-level Deformable Block.
+      <center>Ablation studies of quantity setting for the Multi-group Context Generation and Multi-level Deformable Block.</center>
     </div>
 
     
