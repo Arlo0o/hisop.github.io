@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Hierarchical Context Alignment with Disentangled Geometric and Temporal Modeling for Semantic Occupancy Prediction">
+  <meta name="keywords" content="VLN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hierarchical Context Alignment with Disentangled Geometric and Temporal Modeling for Semantic Occupancy Prediction</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./prj_static/css/bulma.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./prj_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./prj_static/css/index.css">
+  <!-- <link rel="icon" href="./prj_static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./prj_static/js/fontawesome.all.min.js"></script>
+  <script src="./prj_static/js/bulma-carousel.min.js"></script>
+  <script src="./prj_static/js/bulma-slider.min.js"></script>
+  <script src="./prj_static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://arlo0o.github.io/libohan.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Projects
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://arlo0o.github.io/hisop.github.io/">
+            Hi-SOP
+          </a>
+
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/Arlo0o/HTCL">
+            HTCL
+          </a>
+
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/Arlo0o/StereoScene">
+            BRGScene
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">Hierarchical Context Alignment with Disentangled Geometric and Temporal Modeling for Semantic Occupancy Prediction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://arlo0o.github.io/libohan.github.io/">Bohan Li</a>      </span>
+           
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Shanghai Jiao Tong University, Eastern Institute for Advanced Study</span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">PAMI </span>
+          </div> -->
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/230519195."
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/jialuli-luka/PanoGen"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <center>
+        <video id="teaser" autoplay controls muted loop width="80%">
+          <source src="./hisop/teaser_compressed.mp4" type="video/mp4">
+        </video>
+        </center>
+
+    </div>
+  </div>
+</section>
+
+<hr>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Camera-based 3D Semantic Occupancy Prediction (SOP) is crucial for understanding complex 3D scenes from limited 2D image observations. Existing SOP methods typically aggregate contextual features to assist the occupancy representation learning, alleviating issues like occlusion or ambiguity. However, these solutions often face misalignment issues wherein the corresponding features at the same position across different frames may have different semantic meanings during the aggregation process, which leads to unreliable contextual fusion results and an unstable representation learning process. To address this problem, we introduce a new Hierarchical context alignment paradigm for a more accurate SOP (<b>Hi-SOP</b>). Hi-SOP first disentangles the geometric and temporal context for separate alignment, which two branches are then composed to enhance the reliability of semantic occupancy prediction. This parsing of the visual input into a local-global alignment hierarchy includes: (I) disentangled geometric and temporal separate alignment, within each leverages depth confidence and camera pose as prior for relevant feature matching respectively; (II) global alignment and composition of the transformed geometric and temporal volumes based on semantics consistency. Our method outperforms SOTAs for semantic scene completion on the SemanticKITTI\&NuScene-Occupancy datasets and LiDAR semantic segmentation on the NuScene dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Teaser</h2>
+
+      <center><img src="hisop\teaser1.jpg" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+      <p>Our hierarchical context alignment learning method versus previous geometric modeling (e.g., OccFormer) and temporal modeling (e.g., VoxFormer-T) methods for semantic occupancy prediction.</p>
+      </div>
+
+      <center><img src="hisop\teaser2.jpg" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+      <p>The effect of the hierarchical context alignment on the SemanticKITTI validation set. We remove both the temporal alignment and the geometric alignment to implement the setting of 'w/o align'. The proposed hierarchical context alignment strategy captures more reliable and comprehensive semantic scenes, and leads to more stable representation modeling in the learning process.</p>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Overview</h2>
+
+      <center><img src="hisop\method.jpg" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+      <p>Overall framework of our proposed hierarchical context alignment scheme, which is composed of the Geometric Alignment, the Temporal Alignment and the Global Composition. The Geometric Alignment is achieved with the Geometric Confidence-awareness Lifting (GCL) module. The Temporal Alignment is realized with the Cross-frame Pattern Affinity (CPA) measurement and Affinity-based Dynamic Refinement (ADR) module. Afterward, the Global Composition with the Depth-Hypothesis-Based Transformation (DHBT) module is introduced to aggregate the disentangled relevant content for reliable fine-grained semantic occupancy prediction.</p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<hr>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Experimental Results</h2>
+  </div>
+
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Quantitative Results</h2>
+
+    <center><img src="hisop\table1.jpg" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Quantitative results on the SemanticKITTI validation set with the state-of-the-art camera-based semantic scene completion methods. The ``S-T'', ``S'' and ``M'' denote temporal stereo images, single-frame stereo images, and single-frame monocular images, respectively. The top two performers are marked bold and underline.
+    </div>
+
+    <center><img src="hisop\table2.jpg" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Quantitative results on the SemanticKITTI test set with the state-of-the-art semantic scene completion methods. The ``S-T'', ``S'' and ``M'' denote temporal stereo images, single-frame stereo images, and single-frame monocular images, respectively. The top two performers are marked bold and underline.
+    </div>
+
+    <center><img src="hisop\table3.jpg" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Quantitative results on the NuScene-Occupancy validation set with the state-of-the-art semantic scene completion methods. The top two performers are marked bold and underline. The ``L'', ``M'', ``M-D'' and ``M-T'' denote LiDAR inputs, monocular images, monocular images with depth maps and temporal monocular images, respectively. The LiDAR points are projected and densified to generate the depth maps.
+    </div>
+
+    <center><img src="hisop\table4.jpg" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Quantitative results on the nuScene validation set with the state-of-the-art LiDAR semantic segmentation. The top two performers are marked bold and underline. The ``L'', ``M'' and ``M-T'' denote LiDAR inputs, monocular images and temporal monocular images, respectively.
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Qualitative Results</h2>
+
+    <center><img src="hisop\fig1.jpg" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Qualitative results on the SemanticKITTI validation set. Our proposed Hi-SOP captures more complete and accurate scenery layouts compared with VoxFormer. Meanwhile, Hi-SOP hallucinates more proper scenery beyond the camera's field of view.
+    </div>
+
+    
+    <center><img src="hisop\fig2.jpg" alt="Teaser" width="100%"></center>
+    <div class="content has-text-justified">
+      Qualitative results on the NuScene-Occupancy validation set. Our proposed Hi-SOP can generate more complete and comprehensive semantic scenes compared with the ground truth.
+    </div>
+
+    <center><img src="hisop\fig3.jpg" alt="Teaser" width="100%"></center>
+    <div class="content has-text-justified">
+      Qualitative results on the nuScene validation set. Our proposed Hi-SOP generates more accurate semantic labels compared with the results from TPVFormer.
+    </div>
+
+  </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-5">Ablation Study</h2>
+
+    <center><img src="hisop\ab1.jpg" alt="Teaser" width="100%"></center>
+    <div class="content has-text-justified">
+      Ablation study for different architectural components on the SemanticKITTI validation set.
+    </div>
+
+
+    <center><img src="hisop\ab2.jpg" alt="Teaser" width="100%"></center>
+    <div class="content has-text-justified">
+      Ablation studies of quantity setting for the Multi-group Context Generation and Multi-level Deformable Block.
+    </div>
+
+  </div>
+  </div>
+
+
+  </div>
+  </div>
+</section>
+<hr>
+
+ 
+
+
+ 
+
+</body>
+</html>
